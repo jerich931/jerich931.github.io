@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Compsim Blade</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="../index.html" class="logo">Jerich Lee</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/jerich-lee/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/jerich347" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.youtube.com/channel/UCDLX5neMmz-tlkrouKbeSKg" class="icon brands fa-youtube"><span class="label">youtube</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<form>
+                            <input type="button" value="Back" onclick="history.back()">
+                           </form>
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Compsim Blade</h1>
+								</header>
+									<p>A capacitive touch-enabled timing device that connects and
+										communicates via Bluetooth to a central device running a
+										software timer and database application for use in official Rubik's Cube competitions.</p>
+								
+
+								<video width="1200" height="600" controls loop autoplay muted>
+										<source src="../videos/compsimblade/compsimblade.mp4" type="video/mp4">
+									</video>
+								<p>
+									The Wireless Hand Timer Peripheral is a timing device that connects and communicates wirelessly (eg. Bluetooth, WiFi, radio) to a central device running a software timer/database application. This device makes significant advancements over the current predominant timer on the market, the SpeedStacks Stackmat, which simply acts as a built-in stopwatch initiated and terminated by the touching of two capacitive touch sensors. In the Rubik’s cube community, SpeedStacks Stackmat timers are the main timers used to record Rubik’s cube speedsolve times. Inconveniently, a user must then manually enter in the times from the Stackmat into a virtual database which calculates certain statistics (Mean, standard deviation, etc) of the list of times entered. This causes room for human error (eg. entering the times incorrectly), which leads to delays (entering data uses up time itself), and confusion for competitors. The main improvement this invention brings is the ability to connect and send times directly to your phone or computer with minimal delay (milliseconds) and without a middle man having to enter in the data manually, eliminating any chance that the database may receive the data incorrectly. The Wireless Hand Timer Peripheral is paired with a user’s phone or computer and is used to start and stop a stopwatch on the phone or the peripheral itself, then send wirelessly and store the time in a virtual database where certain statistics can be calculated without error. 
+									</p>
+								<div class="image main"><img src="../image/compsimblade/wireless timer flowchart (4).jpg" alt=""/></div>
+								<p>To begin the virtual stopwatch run and displayed on central, the peripheral has two values or “states” that may be sent to central: “pressed”, or “not_pressed”. When the user touches both touch sensors central receives value “pressed”, and when the user takes one or more hands off the touch sensor central receives value “not_pressed”. This ensures that the peripheral is sending a single value instead of repeated values when the state of the peripheral is changed. 
+
+									The peripheral can record times using a built-in stopwatch timer initiated by pressing two capacitive touch sensors, then sending the time wirelessly to a virtual database. This would be ideal for competitions due to the elimination of delay caused by the potential connection instability of the peripheral and central. The protocol is outlined similarly.
+									The user first pairs the peripheral to central. 
+									Once both touch sensors are pressed for X seconds then released, the peripheral initiates a built-in stopwatch timer. 
+									If the touch sensors are released before X seconds have elapsed, the timer does not start. The sensors must be held for a certain amount of timer in order to start.
+									When the user presses the sensors after Y seconds has elapsed (this is the solving time), Y is sent wirelessly to central and stored in the database. 
+									</p>
+								<div class="image main"><img src="../image/compsimblade/Blade Timer Diagrams.jpg" alt=""/></div>
+								<p>This timer can enter two modes: Practice mode and Competition mode. Before the competition, competitors will be assigned a competitor ID, a random number. When they are at a competition, (there are many stations with one judge for each station, there is a Timer at each station), the competitor will be called up to a station by a judge, and will be prompted to enter the competitor ID into an app. The Timer will generate a random digit pin displayed onto its screen, and the competitor will then enter the random digit pin into the app to authenticate and connect them to that specific timer. 
+								</p>
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						
+						<section class="split contact">
+							
+							<section>
+								<h3>Email</h3>
+								<p>jlee901@illinois.edu</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/jerich-lee/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://github.com/jerich347" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
